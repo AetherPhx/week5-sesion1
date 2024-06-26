@@ -1,0 +1,35 @@
+/* Importamos la fuente roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Se resetean estilos a todos los elementos h1, h2, h3 */
+h1, h2, h3{ 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+/* Se diferencia la clase .titulo de los elementos h1, h2, h3 */
+.titulo{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Se aplican estilos a todos los elementos con la clase parrafo */
+.parrafo{ 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: #000;
+}
+/** Explicación de Cascada + Especificidad
+    Se aplica el color azul y no el rojo debido al funcionamiento por cascada.
+    Solo se aplica a los p sin la clase .parrafo debido a la  especificidad. 
+*/
+p{ color: red;
+}
+p{ color: blue
+}
